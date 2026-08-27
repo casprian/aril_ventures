@@ -111,7 +111,7 @@
                     All Projects
                 </button>
                 <button onclick="filterProjects('completed')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
-                    Completed Projects
+                    Ready To Occupy Projects
                 </button>
                 <button onclick="filterProjects('ongoing')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
                     Ongoing Developments
@@ -130,95 +130,15 @@
             <!-- Completed Projects Section -->
             <div id="completed-section" style="display: none;" class="mb-20">
                 <div class="mb-12">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-2">Completed Projects</h2>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">Ready To Occupy Projects</h2>
                     <p class="text-gray-600">Successfully delivered premium developments with satisfied clients</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Project: Aril Premium Residences -->
-                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gray-300 overflow-hidden">
-                            <img src="assets/images/1.jpeg" alt="Aril Premium Residences" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900">Aril Premium Residences</h3>
-                                    <p class="text-gray-600 text-sm">Hassan Central</p>
-                                </div>
-                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
-                            </div>
-                            <p class="text-gray-700 text-sm mb-4">Luxury residential complex with modern architecture and premium amenities. Successfully delivered 45 units with 100% client satisfaction and all properties sold within first year.</p>
-                            <div class="mb-4 space-y-2 text-sm">
-                                <p><span class="font-semibold text-gray-700">Location:</span> Hassan Central</p>
-                                <p><span class="font-semibold text-gray-700">Units Delivered:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">45</span></p>
-                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2024</p>
-                            </div>
-                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
-                        </div>
-                    </div>
-
-                    <!-- Project: Sukoon Valley Estate -->
-                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gray-300 overflow-hidden">
-                            <img src="assets/images/2.jpeg" alt="Sukoon Valley Estate" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900">Sukoon Valley Estate</h3>
-                                    <p class="text-gray-600 text-sm">Bangalore Outskirts</p>
-                                </div>
-                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
-                            </div>
-                            <p class="text-gray-700 text-sm mb-4">Integrated community development spanning 25 acres with 120 luxury villas. Landmark project featuring world-class amenities and became benchmark for sustainable luxury living.</p>
-                            <div class="mb-4 space-y-2 text-sm">
-                                <p><span class="font-semibold text-gray-700">Location:</span> Bangalore Outskirts</p>
-                                <p><span class="font-semibold text-gray-700">Plot Size:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">25 Acres</span></p>
-                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2023</p>
-                            </div>
-                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
-                        </div>
-                    </div>
-
-                    <!-- Project: Mysore Heritage Complex -->
-                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gray-300 overflow-hidden">
-                            <img src="assets/images/3.jpeg" alt="Mysore Heritage Complex" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900">Mysore Heritage Complex</h3>
-                                    <p class="text-gray-600 text-sm">Mysore City Center</p>
-                                </div>
-                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
-                            </div>
-                            <p class="text-gray-700 text-sm mb-4">Commercial and residential mixed-use complex in prime Mysore location. Strategically designed complex featuring flagship retail, premium offices and residential units.</p>
-                            <div class="mb-4 space-y-2 text-sm">
-                                <p><span class="font-semibold text-gray-700">Location:</span> Mysore City Center</p>
-                                <p><span class="font-semibold text-gray-700">Total Built-up:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">250,000 Sqft</span></p>
-                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2024</p>
-                            </div>
-                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
-                        </div>
-                    </div>
-
                     
-                </div>
-            </div>
-            
-            <!-- Ongoing Projects Section -->
-            <div id="ongoing-section" class="mb-20">
-                <div class="mb-12">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-2">Ongoing Developments</h2>
-                    <p class="text-gray-600">Active projects with advanced progress and available opportunities</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- Project: Sukoon Layout -->
+ <!-- Project: Sukoon Layout -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
                         <div class="h-48 bg-gray-300 overflow-hidden">
                             <img src="assets/images/arch.jpeg" alt="Sukoon Layout" class="w-full h-full object-cover">
@@ -240,6 +160,42 @@
                             <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">Inquire Now</button>
                         </div>
                     </div>
+
+                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="Aril Gardens" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Aril Gardens</h3>
+                                    <p class="text-gray-600 text-sm">Mysore Hebbadi</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Ongoing</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Exclusive managed farmland development with premium clubhouse facilities and lifestyle amenities. Perfect for investors seeking agricultural investment with luxury resort-like experience.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Mysore Hebbadi</p>
+                                <p><span class="font-semibold text-gray-700">Partner:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Aril Ventures</span></p>
+                                <p><span class="font-semibold text-gray-700">Property Type:</span> Managed Farmland</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">Inquire Now</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- Ongoing Projects Section -->
+            <div id="ongoing-section" class="mb-20">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">Ongoing Developments</h2>
+                    <p class="text-gray-600">Active projects with advanced progress and available opportunities</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                   
 
                     <!-- Project: Engineers Delight -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
@@ -288,27 +244,7 @@
                     </div>
 
                     <!-- Project: Aril Gardens -->
-                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gray-300 overflow-hidden">
-                            <img src="assets/images/arch.jpeg" alt="Aril Gardens" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <div class="flex items-start justify-between mb-2">
-                                <div>
-                                    <h3 class="text-xl font-bold text-gray-900">Aril Gardens</h3>
-                                    <p class="text-gray-600 text-sm">Mysore Hebbadi</p>
-                                </div>
-                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Ongoing</span>
-                            </div>
-                            <p class="text-gray-700 text-sm mb-4">Exclusive managed farmland development with premium clubhouse facilities and lifestyle amenities. Perfect for investors seeking agricultural investment with luxury resort-like experience.</p>
-                            <div class="mb-4 space-y-2 text-sm">
-                                <p><span class="font-semibold text-gray-700">Location:</span> Mysore Hebbadi</p>
-                                <p><span class="font-semibold text-gray-700">Partner:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Aril Ventures</span></p>
-                                <p><span class="font-semibold text-gray-700">Property Type:</span> Managed Farmland</p>
-                            </div>
-                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">Inquire Now</button>
-                        </div>
-                    </div>
+                   
 
                     <!-- Project: Pinnacle Greens -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
