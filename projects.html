@@ -110,6 +110,9 @@
                 <button onclick="filterProjects('all')" class="tab-button active py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
                     All Projects
                 </button>
+                <button onclick="filterProjects('completed')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
+                    Completed Projects
+                </button>
                 <button onclick="filterProjects('ongoing')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
                     Ongoing Developments
                 </button>
@@ -124,6 +127,155 @@
     <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
             
+            <!-- Completed Projects Section -->
+            <div id="completed-section" style="display: none;" class="mb-20">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">Completed Projects</h2>
+                    <p class="text-gray-600">Successfully delivered premium developments with satisfied clients</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Project: Aril Premium Residences -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a9db00029?w=500&h=300&fit=crop" alt="Aril Premium Residences" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Aril Premium Residences</h3>
+                                    <p class="text-gray-600 text-sm">Hassan Central</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Luxury residential complex with modern architecture and premium amenities. Successfully delivered 45 units with 100% client satisfaction and all properties sold within first year.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Hassan Central</p>
+                                <p><span class="font-semibold text-gray-700">Units Delivered:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">45</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2024</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Sukoon Valley Estate -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=300&fit=crop" alt="Sukoon Valley Estate" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Sukoon Valley Estate</h3>
+                                    <p class="text-gray-600 text-sm">Bangalore Outskirts</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Integrated community development spanning 25 acres with 120 luxury villas. Landmark project featuring world-class amenities and became benchmark for sustainable luxury living.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Bangalore Outskirts</p>
+                                <p><span class="font-semibold text-gray-700">Plot Size:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">25 Acres</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2023</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Mysore Heritage Complex -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=500&h=300&fit=crop" alt="Mysore Heritage Complex" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Mysore Heritage Complex</h3>
+                                    <p class="text-gray-600 text-sm">Mysore City Center</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Commercial and residential mixed-use complex in prime Mysore location. Strategically designed complex featuring flagship retail, premium offices and residential units.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Mysore City Center</p>
+                                <p><span class="font-semibold text-gray-700">Total Built-up:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">250,000 Sqft</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2024</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Bangalore Tech Park -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486420899512-ad8a76a8f4ca?w=500&h=300&fit=crop" alt="Bangalore Tech Park" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Bangalore Tech Park</h3>
+                                    <p class="text-gray-600 text-sm">IT Corridor</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">State-of-the-art commercial office park in Bangalore's IT corridor. Occupied by Fortune 500 companies with premium workspace offering cutting-edge infrastructure and amenities.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> IT Corridor</p>
+                                <p><span class="font-semibold text-gray-700">Office Space:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">500,000 Sqft</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2022</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Hassan Commercial Hub -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=300&fit=crop" alt="Hassan Commercial Hub" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Hassan Commercial Hub</h3>
+                                    <p class="text-gray-600 text-sm">Hassan Downtown</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Landmark commercial development transforming Hassan's business landscape. Multi-tenant retail establishment with premium branding partners and strong revenue generation.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Hassan Downtown</p>
+                                <p><span class="font-semibold text-gray-700">Retail Space:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">150,000 Sqft</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2023</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+
+                    <!-- Project: Wellness Resort & Spa -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551405377-9c037cb4f32a?w=500&h=300&fit=crop" alt="Wellness Resort & Spa" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">Wellness Resort & Spa</h3>
+                                    <p class="text-gray-600 text-sm">Nilgiri Hills</p>
+                                </div>
+                                <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">Completed</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">Premium wellness retreat in scenic hill destination. Specialty hospitality project featuring spa facilities, wellness programs and luxury accommodation achieving high occupancy rates.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">Location:</span> Nilgiri Hills</p>
+                                <p><span class="font-semibold text-gray-700">Rooms:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">80</span></p>
+                                <p><span class="font-semibold text-gray-700">Year Completed:</span> 2024</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">View Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Ongoing Projects Section -->
             <div id="ongoing-section" class="mb-20">
                 <div class="mb-12">
@@ -135,8 +287,8 @@
                     
                     <!-- Project: Sukoon Layout -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-emerald-400 to-emerald-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Sukoon</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1585518419759-147e8b5c7c48?w=500&h=300&fit=crop" alt="Sukoon Layout" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -158,8 +310,8 @@
 
                     <!-- Project: Engineers Delight -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Engineers</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1545994124-0ce193fa00d7?w=500&h=300&fit=crop" alt="Engineers Delight" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -181,8 +333,8 @@
 
                     <!-- Project: Highway Layout -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Highway</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1495251821051-a8c60eac54d2?w=500&h=300&fit=crop" alt="Highway Layout" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -204,8 +356,8 @@
 
                     <!-- Project: Aril Gardens -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-green-300 to-green-400 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Gardens</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1502682006707-53c43f00a3b9?w=500&h=300&fit=crop" alt="Aril Gardens" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -227,8 +379,8 @@
 
                     <!-- Project: Pinnacle Greens -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-teal-400 to-teal-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Pinnacle</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=300&fit=crop" alt="Pinnacle Greens" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -250,8 +402,8 @@
 
                     <!-- Project: RF Twilight -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-pink-400 to-pink-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">RF Twilight</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1567605022619-f127ff13efff?w=500&h=300&fit=crop" alt="RF Twilight" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -273,8 +425,8 @@
 
                     <!-- Project: Hassan Aramane -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Aramane</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1505765050585-c81ec84fded9?w=500&h=300&fit=crop" alt="Hassan Aramane" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -296,8 +448,8 @@
 
                     <!-- Project: Sukoon Private Residences -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Private</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=300&fit=crop" alt="Sukoon Private Residences" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -330,8 +482,8 @@
 
                     <!-- Project: Mysore - Aril Ghar Sabke Liye -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-cyan-400 to-cyan-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Ghar</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f7cbb8f0c?w=500&h=300&fit=crop" alt="Aril Ghar Sabke Liye Mysore" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -353,8 +505,8 @@
 
                     <!-- Project: Hassan - Aril Ghar Sabke Liye -->
                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
-                        <div class="h-48 bg-gradient-to-br from-lime-400 to-lime-500 flex items-center justify-center">
-                            <span class="text-4xl font-bold text-white opacity-30">Community</span>
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1577720643272-265f434b4eb0?w=500&h=300&fit=crop" alt="Aril Ghar Sabke Liye Hassan" class="w-full h-full object-cover">
                         </div>
                         <div class="p-6">
                             <div class="flex items-start justify-between mb-2">
@@ -488,6 +640,7 @@
 
     <script>
         function filterProjects(category) {
+            const completedSection = document.getElementById('completed-section');
             const ongoingSection = document.getElementById('ongoing-section');
             const upcomingSection = document.getElementById('upcoming-section');
             const buttons = document.querySelectorAll('.tab-button');
@@ -498,12 +651,19 @@
 
             // Show/hide sections
             if (category === 'all') {
+                completedSection.style.display = 'block';
                 ongoingSection.style.display = 'block';
                 upcomingSection.style.display = 'block';
+            } else if (category === 'completed') {
+                completedSection.style.display = 'block';
+                ongoingSection.style.display = 'none';
+                upcomingSection.style.display = 'none';
             } else if (category === 'ongoing') {
+                completedSection.style.display = 'none';
                 ongoingSection.style.display = 'block';
                 upcomingSection.style.display = 'none';
             } else if (category === 'upcoming') {
+                completedSection.style.display = 'none';
                 ongoingSection.style.display = 'none';
                 upcomingSection.style.display = 'block';
             }
