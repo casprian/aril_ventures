@@ -74,8 +74,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">A</span>
+                    <div class="w-12 h-12 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                        <img src="assets/images/aril.jpeg" alt="Aril Ventures logo" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h1 class="text-xl font-bold text-gray-900">Aril Ventures</h1>
@@ -92,6 +92,11 @@
                 </div>
                 
                 <div class="flex items-center space-x-4">
+                    <label for="language-switcher" class="sr-only">Select language</label>
+                    <select id="language-switcher" aria-label="Select language" onchange="window.location.href=this.value" class="hidden sm:block border border-gray-300 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600">
+                        <option value="investors.html" selected>English</option>
+                        <option value="investors-ar.html">Arabic</option>
+                    </select>
                     <a href="contact.html" class="cta-primary text-white px-6 py-2 rounded-lg font-semibold hidden md:block">
                         Get Started
                     </a>
@@ -369,7 +374,7 @@
                         <!-- Phone -->
                         <div>
                             <label class="block text-gray-900 font-bold mb-2">Phone Number *</label>
-                            <input type="tel" placeholder="+91 98765 43210" class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                            <input type="tel" placeholder="9686496343" class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
                         </div>
 
                         <!-- Organization -->
@@ -464,7 +469,7 @@
                     </button>
 
                     <p class="text-center text-gray-600 text-sm">
-                        Our team typically responds within 24 hours. You can also call us directly at <span class="font-bold">+91 80XXXX XXXX</span>
+                        Our team typically responds within 24 hours. You can also call us directly at <span class="font-bold">9686496343</span>
                     </p>
                 </form>
             </div>
@@ -570,8 +575,8 @@
                 <!-- Company Info -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">A</span>
+                        <div class="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                            <img src="assets/images/aril.jpeg" alt="Aril Ventures logo" class="w-full h-full object-cover">
                         </div>
                         <div>
                             <h3 class="text-lg font-bold">Aril Ventures</h3>
@@ -601,15 +606,15 @@
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li>
                             <p class="font-semibold text-white">Bangalore</p>
-                            <p class="text-sm">+91 80XXXX XXXX</p>
+                            <p class="text-sm">9686496343</p>
                         </li>
                         <li>
                             <p class="font-semibold text-white">Hassan</p>
-                            <p class="text-sm">+91 81XXXX XXXX</p>
+                            <p class="text-sm">9686496343</p>
                         </li>
                         <li>
                             <p class="font-semibold text-white">Mysore</p>
-                            <p class="text-sm">+91 82XXXX XXXX</p>
+                            <p class="text-sm">9686496343</p>
                         </li>
                     </ul>
                 </div>
@@ -620,11 +625,11 @@
                     <ul class="space-y-2 text-sm text-gray-400">
                         <li>
                             <p class="font-semibold text-gray-300">Email</p>
-                            <a href="mailto:investors@arilventures.com" class="hover:text-red-600 transition">investors@arilventures.com</a>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
                         </li>
                         <li>
                             <p class="font-semibold text-gray-300">Support</p>
-                            <a href="mailto:support@arilventures.com" class="hover:text-red-600 transition">support@arilventures.com</a>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
                         </li>
                     </ul>
                 </div>

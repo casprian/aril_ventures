@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المشاريع - أريل فينتشرز | محفظة عقارية</title>
+    <meta name="description" content="استكشف مشاريع أريل فينتشرز العقارية المتميزة، من المشاريع قيد التنفيذ إلى الإطلاقات القادمة عبر الهند.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(229, 35, 38, 0.2);
+        }
+
+        .tab-button {
+            position: relative;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button.active {
+            color: #E52326;
+            border-bottom-color: #E52326;
+        }
+
+        .cta-primary {
+            background-color: #E52326;
+            transition: all 0.3s ease;
+        }
+
+        .cta-primary:hover {
+            background-color: #cc1f22;
+            box-shadow: 0 10px 30px rgba(229, 35, 38, 0.4);
+        }
+
+        .filter-tag {
+            border: 2px solid #E52326;
+            color: #E52326;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-tag.active {
+            background-color: #E52326;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- شريط التنقل -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                        <img src="assets/images/aril.jpeg" alt="شعار أريل فينتشرز" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">أريل فينتشرز</h1>
+                        <p class="text-xs text-red-600 font-semibold">بوابة إلى الوفرة</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">الرئيسية</a>
+                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">المشاريع</a>
+                    <a href="about-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">من نحن</a>
+                    <a href="investors-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">المستثمرون</a>
+                    <a href="contact-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">اتصل بنا</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <label for="language-switcher" class="sr-only">اختر اللغة</label>
+                    <select id="language-switcher" aria-label="اختر اللغة" onchange="window.location.href=this.value" class="hidden sm:block border border-gray-300 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600">
+                        <option value="projects.html">الإنجليزية</option>
+                        <option value="projects-ar.html" selected>العربية</option>
+                    </select>
+                    <a href="contact-ar.html" class="cta-primary text-white px-6 py-2 rounded-lg font-semibold hidden md:block">
+                        ابدأ الآن
+                    </a>
+                    <button class="md:hidden p-2 relative group">
+                        <span class="block w-6 h-0.5 bg-gray-900 mb-1.5 group-hover:bg-red-600 transition"></span>
+                        <span class="block w-6 h-0.5 bg-gray-900 mb-1.5 group-hover:bg-red-600 transition"></span>
+                        <span class="block w-6 h-0.5 bg-gray-900 group-hover:bg-red-600 transition"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ترويسة الصفحة -->
+    <section class="bg-gradient-to-br from-slate-900 to-slate-800 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl sm:text-6xl font-bold text-white mb-4">مشاريعنا</h1>
+            <p class="text-xl text-gray-300">اكتشف محفظتنا المتكاملة من المشاريع المتميزة.</p>
+        </div>
+    </section>
+
+    <!-- تبويبات تصفح المشاريع -->
+    <section class="bg-white border-b border-gray-200 sticky top-28 z-40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex space-x-8 overflow-x-auto">
+                <button onclick="filterProjects('all')" class="tab-button active py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
+                    كل المشاريع
+                </button>
+                <button onclick="filterProjects('completed')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
+                    مشاريع جاهزة للسكن
+                </button>
+                <button onclick="filterProjects('ongoing')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
+                    مشاريع قيد التنفيذ
+                </button>
+                <button onclick="filterProjects('upcoming')" class="tab-button py-4 px-1 whitespace-nowrap font-semibold text-gray-700">
+                    إطلاقات قادمة
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- شبكة المشاريع -->
+    <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- قسم المشاريع المكتملة -->
+            <div id="completed-section" style="display: none;" class="mb-20">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">مشاريع جاهزة للسكن</h2>
+                    <p class="text-gray-600">مشاريع متميزة تم تسليمها بنجاح لعملاء راضين</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- مشروع: مساكن أريل الفاخرة -->
+                    
+ <!-- مشروع: مخطط سكون -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="مخطط سكون" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">مخطط سكون</h3>
+                                    <p class="text-gray-600 text-sm">حسن</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">مخططات سكنية فاخرة بمرافق حديثة وبنية تحتية متميزة، تم تطويرها بالتعاون مع تشيكد سبوت لضمان الجودة وسرعة التنفيذ.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> حسن منطقة</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">تشيكد سبوت</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> مخططات سكنية</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                     <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="حدائق أريل" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">حدائق أريل</h3>
+                                    <p class="text-gray-600 text-sm">ميسور - هبادي</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">تطوير حصري لأراضٍ زراعية مُدارة مع مرافق نادٍ راقٍ وخدمات نمط حياة متميزة، مناسب للمستثمرين الباحثين عن تجربة راقية.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> ميسور - هبادي</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">أريل فينتشرز</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> أراضٍ زراعية مُدارة</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <!-- قسم المشاريع الجارية -->
+            <div id="ongoing-section" class="mb-20">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">مشاريع قيد التنفيذ</h2>
+                    <p class="text-gray-600">مشاريع نشطة بمراحل متقدمة وفرص متاحة.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                   
+
+                    <!-- مشروع: متعة المهندسين -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="متعة المهندسين" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">متعة المهندسين</h3>
+                                    <p class="text-gray-600 text-sm">حسن (منطقة نافكس)</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">مجتمع سكني متميز يقع استراتيجيا بجوار كلية نافكس للهندسة، يتميز بتصميم حديث وشراكة استراتيجية مع سيا إنفراستركتشر لضمان الجودة.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> حسن (منطقة نافكس)</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">سيا إنفراستركتشر</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> سكني</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: مخطط الطريق السريع -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="مخطط الطريق السريع" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">مخطط الطريق السريع</h3>
+                                    <p class="text-gray-600 text-sm">باجيبالي</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">تطوير استراتيجي على امتداد ممر طريق بنغالور - حيدر آباد السريع، بترابط ممتاز وفرص نمو عالية القيمة.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> باجيبالي (طريق بنغالور - حيدر آباد السريع)</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">هايواي ديفلوبمنت</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> تجاري/سكني</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: حدائق أريل -->
+                   
+
+                    <!-- مشروع: بيناكل جرينز -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="بيناكل جرينز" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">بيناكل جرينز</h3>
+                                    <p class="text-gray-600 text-sm">بنغالور المنطقة الحضرية</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">تطوير مجتمع أخضر راقٍ يجمع بين الاستدامة البيئية والرفاهية الحديثة بالشراكة مع تشيكد سبوت بمعايير عالمية وتسليم شفاف.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> بنغالور المنطقة الحضرية</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">تشيكد سبوت</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> مجتمع أخضر</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: آر إف تويلايت -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="آر إف تويلايت" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">آر إف تويلايت</h3>
+                                    <p class="text-gray-600 text-sm">كينجيري، بنغالور</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">مشروع تحديث وتجديد شقق راقٍ، بالتعاون الدولي مع ماريكون الإمارات لتقديم تصميم متطور وتشطيبات فاخرة ومعايير معيشة عصرية.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> كينجيري، بنغالور</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">ماريكون الإمارات</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> تجديد شقق</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: حسن آراماني -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/1.jpeg" alt="حسن آراماني" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">حسن آراماني</h3>
+                                    <p class="text-gray-600 text-sm">حسن</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">إنشاء قاعة أفراح ومساحة فعاليات تجارية بمواصفات عالية وبنية تحتية حديثة لتكون وجهة مميزة للمناسبات الكبرى.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> حسن</p>
+                                <p><span class="font-semibold text-gray-700">الشريك:</span> <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">أريل فينتشرز</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> مساحة فعاليات تجارية</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: مساكن سكون الخاصة -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="مساكن سكون الخاصة" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">مساكن سكون الخاصة</h3>
+                                    <p class="text-gray-600 text-sm">حسن (وحدات متعددة)</p>
+                                </div>
+                                <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قيد التنفيذ</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">وحدات سكنية خاصة فائقة الفخامة (سكون 106 و108 و20) مع تنفيذ مخصص وتشطيبات فاخرة وخدمات حصرية للباحثين عن الخصوصية والراحة.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> حسن</p>
+                                <p><span class="font-semibold text-gray-700">الوحدات:</span> <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">106، 108، 20</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> سكن فائق الفخامة</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">استفسر الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المشاريع القادمة -->
+            <div id="upcoming-section" class="mb-12">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">إطلاقات قادمة</h2>
+                    <p class="text-gray-600">مشاريع مجدولة للطرح قريبا مع فرص استثمارية مبكرة.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- مشروع: ميسور - أريل - منزل للجميع -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="أريل - منزل للجميع ميسور" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">أريل - منزل للجميع</h3>
+                                    <p class="text-gray-600 text-sm">ميسور</p>
+                                </div>
+                                <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قادم</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">مجتمع سكني شامل مصمم لشرائح أسرية متنوعة، يوفر رفاهية ميسرة وبنية تحتية متميزة لتعزيز جودة الحياة للجميع.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> ميسور</p>
+                                <p><span class="font-semibold text-gray-700">الإطلاق:</span> <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">الربع الرابع 2026</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> سكن مجتمعي</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">سجل اهتمامك</button>
+                        </div>
+                    </div>
+
+                    <!-- مشروع: حسن - أريل - منزل للجميع -->
+                    <div class="hover-lift bg-white rounded-xl overflow-hidden border-2 border-gray-200 hover:border-red-600">
+                        <div class="h-48 bg-gray-300 overflow-hidden">
+                            <img src="assets/images/arch.jpeg" alt="أريل - منزل للجميع حسن" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-start justify-between mb-2">
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-900">أريل - منزل للجميع</h3>
+                                    <p class="text-gray-600 text-sm">حسن</p>
+                                </div>
+                                <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap ml-2">قادم</span>
+                            </div>
+                            <p class="text-gray-700 text-sm mb-4">مشروع سكني يركز على المجتمع ويقدم رفاهية ميسرة في حسن، مع بنية تحتية متكاملة وتركيز على الاستدامة والتفاعل المجتمعي.</p>
+                            <div class="mb-4 space-y-2 text-sm">
+                                <p><span class="font-semibold text-gray-700">الموقع:</span> حسن</p>
+                                <p><span class="font-semibold text-gray-700">الإطلاق:</span> <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">الربع الأول 2027</span></p>
+                                <p><span class="font-semibold text-gray-700">نوع العقار:</span> سكن مجتمعي</p>
+                            </div>
+                            <button class="w-full cta-primary text-white py-2 rounded-lg font-semibold text-sm">سجل اهتمامك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الاستفسار الاستثماري -->
+    <section class="bg-gradient-to-r from-red-600 to-red-700 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">مهتم بهذه المشاريع؟</h2>
+            <p class="text-xl text-white/90 mb-8">احصل على معلومات تفصيلية عن المشاريع وفرص استثمارية حصرية.</p>
+            <a href="contact-ar.html" class="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+                حمّل كتيب المشروع
+            </a>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- معلومات الشركة -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                            <img src="assets/images/aril.jpeg" alt="شعار أريل فينتشرز" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">أريل فينتشرز</h3>
+                            <p class="text-xs text-red-400">بوابة إلى الوفرة</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        منصة استثمار عقاري متميزة بمحفظة متنوعة عبر مختلف المدن في الهند.
+                    </p>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">روابط سريعة</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index-ar.html" class="hover:text-red-600 transition">الرئيسية</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">المشاريع</a></li>
+                        <li><a href="about-ar.html" class="hover:text-red-600 transition">من نحن</a></li>
+                        <li><a href="investors-ar.html" class="hover:text-red-600 transition">علاقات المستثمرين</a></li>
+                        <li><a href="contact-ar.html" class="hover:text-red-600 transition">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- المكاتب الإقليمية -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">المراكز الإقليمية</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>
+                            <p class="font-semibold text-white">بنغالور</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-white">حسن</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-white">ميسور</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- التواصل والشؤون القانونية -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">معلومات التواصل</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>
+                            <p class="font-semibold text-gray-300">البريد الإلكتروني</p>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-gray-300">المشاريع</p>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- فاصل -->
+            <div class="border-t border-gray-700 pt-8 mb-8">
+                <div class="grid md:grid-cols-3 gap-8 text-sm text-gray-400">
+                    <div>
+                        <p class="font-semibold text-white mb-2">إخلاء مسؤولية قانوني</p>
+                        <p>جميع المشاريع مسجلة وموثقة. الأداء السابق لا يضمن النتائج المستقبلية. يرجى مراجعة وثائق المشروع بعناية.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white mb-2">حالة المشروع</p>
+                        <p>يتم توفير تحديثات الحالة بشكل منتظم. الجداول الزمنية خاضعة للموافقات التنظيمية وظروف السوق. التسجيل المبكر يضمن أولوية الوصول.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white mb-2">الخصوصية والأمان</p>
+                        <p>يتم التعامل مع جميع الاستفسارات بسرية. المعلومات محمية بتشفير متقدم ولا تتم مشاركتها دون موافقة صريحة.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أسفل التذييل -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 أريل فينتشرز ذ.م.م. جميع الحقوق محفوظة.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-red-600 transition">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-red-600 transition">شروط الخدمة</a>
+                    <a href="#" class="hover:text-red-600 transition">الامتثال</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterProjects(category) {
+            const completedSection = document.getElementById('completed-section');
+            const ongoingSection = document.getElementById('ongoing-section');
+            const upcomingSection = document.getElementById('upcoming-section');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Show/hide sections
+            if (category === 'all') {
+                completedSection.style.display = 'block';
+                ongoingSection.style.display = 'block';
+                upcomingSection.style.display = 'block';
+            } else if (category === 'completed') {
+                completedSection.style.display = 'block';
+                ongoingSection.style.display = 'none';
+                upcomingSection.style.display = 'none';
+            } else if (category === 'ongoing') {
+                completedSection.style.display = 'none';
+                ongoingSection.style.display = 'block';
+                upcomingSection.style.display = 'none';
+            } else if (category === 'upcoming') {
+                completedSection.style.display = 'none';
+                ongoingSection.style.display = 'none';
+                upcomingSection.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

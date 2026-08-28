@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>علاقات المستثمرين - أريل فينتشرز | فرص استثمارية</title>
+    <meta name="description" content="استكشف فرصا استثمارية متميزة مع أريل فينتشرز. مشاريع تحقق متوسط عائد 24% مع شفافية بمستوى مؤسسي.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(229, 35, 38, 0.2);
+        }
+
+        .cta-primary {
+            background-color: #E52326;
+            transition: all 0.3s ease;
+        }
+
+        .cta-primary:hover {
+            background-color: #cc1f22;
+            box-shadow: 0 10px 30px rgba(229, 35, 38, 0.4);
+        }
+
+        .comparison-table {
+            border-collapse: collapse;
+        }
+
+        .comparison-table td, .comparison-table th {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .comparison-table tbody tr:hover {
+            background-color: #f9fafb;
+        }
+
+        .form-input {
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #E52326;
+            box-shadow: 0 0 0 3px rgba(229, 35, 38, 0.1);
+        }
+
+        .feature-check {
+            color: #10b981;
+        }
+
+        .feature-cross {
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- شريط التنقل -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                        <img src="assets/images/aril.jpeg" alt="شعار أريل فينتشرز" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">أريل فينتشرز</h1>
+                        <p class="text-xs text-red-600 font-semibold">بوابة إلى الوفرة</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">الرئيسية</a>
+                    <a href="projects-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">المشاريع</a>
+                    <a href="about-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">من نحن</a>
+                    <a href="#" class="text-gray-700 hover:text-red-600 font-medium transition">المستثمرون</a>
+                    <a href="contact-ar.html" class="text-gray-700 hover:text-red-600 font-medium transition">اتصل بنا</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <label for="language-switcher" class="sr-only">اختر اللغة</label>
+                    <select id="language-switcher" aria-label="اختر اللغة" onchange="window.location.href=this.value" class="hidden sm:block border border-gray-300 rounded-lg px-3 py-2 text-sm font-medium text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600">
+                        <option value="investors.html">الإنجليزية</option>
+                        <option value="investors-ar.html" selected>العربية</option>
+                    </select>
+                    <a href="contact-ar.html" class="cta-primary text-white px-6 py-2 rounded-lg font-semibold hidden md:block">
+                        ابدأ الآن
+                    </a>
+                    <button class="md:hidden p-2 relative group">
+                        <span class="block w-6 h-0.5 bg-gray-900 mb-1.5 group-hover:bg-red-600 transition"></span>
+                        <span class="block w-6 h-0.5 bg-gray-900 mb-1.5 group-hover:bg-red-600 transition"></span>
+                        <span class="block w-6 h-0.5 bg-gray-900 group-hover:bg-red-600 transition"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ترويسة الصفحة -->
+    <section class="bg-gradient-to-br from-slate-900 to-slate-800 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-5xl sm:text-6xl font-bold text-white mb-4">علاقات المستثمرين</h1>
+            <p class="text-xl text-gray-300">فرص استثمارية مميزة بشفافية مؤسسية عالية</p>
+        </div>
+    </section>
+
+    <!-- قسم مزايا الاستثمار -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">ميزة أريل</h2>
+            <p class="text-gray-600 text-center text-lg mb-12">لماذا يختار المستثمرون الأفراد والمؤسسات أريل فينتشرز</p>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="hover-lift bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-red-600 rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">24%</h3>
+                    <p class="text-gray-700 font-semibold">متوسط العائد على الاستثمار</p>
+                    <p class="text-gray-600 text-sm mt-2">عبر جميع المشاريع ونماذج الاستثمار</p>
+                </div>
+
+                <div class="hover-lift bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-red-600 rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">تخارج سريع</h3>
+                    <p class="text-gray-700 font-semibold">سيولة مبكرة</p>
+                    <p class="text-gray-600 text-sm mt-2">تتم تصفية المشاريع عادة خلال 18-36 شهرا</p>
+                </div>
+
+                <div class="hover-lift bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-red-600 rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">شفاف</h3>
+                    <p class="text-gray-700 font-semibold">رؤية كاملة</p>
+                    <p class="text-gray-600 text-sm mt-2">يشمل تحديثات شهرية وتدقيق طرف ثالث</p>
+                </div>
+
+                <div class="hover-lift bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 hover:border-red-600 rounded-xl p-6 text-center">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">آمن</h3>
+                    <p class="text-gray-700 font-semibold">حماية قانونية</p>
+                    <p class="text-gray-600 text-sm mt-2">حسابات ضمان وحماية شاملة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خيارات الاستثمار -->
+    <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">خيارات الاستثمار</h2>
+            <p class="text-gray-600 text-center text-lg mb-12">اختر نموذج الاستثمار الأنسب لمحفظتك</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- تمويل على مستوى المشروع -->
+                <div class="hover-lift bg-white rounded-xl border-2 border-gray-200 hover:border-red-600 overflow-hidden">
+                    <div class="bg-gradient-to-r from-red-600 to-red-700 px-8 py-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">تمويل على مستوى المشروع</h3>
+                        <p class="text-white/90">استثمار مباشر في مشاريع محددة</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-8">
+                            <p class="text-3xl font-bold text-red-600 mb-2">15% - 30%</p>
+                            <p class="text-gray-700 font-semibold">العائد المتوقع لكل مشروع</p>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">مشاركة مباشرة في المشروع</p>
+                                    <p class="text-gray-600 text-sm">مشاركة المستثمر في القرارات الرئيسية وتوجه المشروع</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">جدول زمني واضح</p>
+                                    <p class="text-gray-600 text-sm">18-36 متوسط مدة إنجاز وتخارج المشروع</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">مرونة التخارج</p>
+                                    <p class="text-gray-600 text-sm">خيارات سيولة متعددة عند اكتمال المشروع</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">الحد الأدنى للاستثمار</p>
+                                    <p class="text-gray-600 text-sm">₹50 لاخ فأكثر (هياكل قابلة للتخصيص)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">توثيق شهري</p>
+                                    <p class="text-gray-600 text-sm">تحديثات تفصيلية للتقدم والبيانات المالية</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="cta-primary text-white w-full py-3 rounded-lg font-bold">
+                            استكشف تمويل المشاريع
+                        </button>
+                    </div>
+                </div>
+
+                <!-- استثمار ملكية أسهم الشركة -->
+                <div class="hover-lift bg-white rounded-xl border-2 border-gray-200 hover:border-red-600 overflow-hidden">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">الاستثمار في ملكية أسهم الشركة</h3>
+                        <p class="text-white/90">شراكة استراتيجية وحصة في نمو الشركة</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="mb-8">
+                            <p class="text-3xl font-bold text-blue-600 mb-2">20% - 35%</p>
+                            <p class="text-gray-700 font-semibold">العائد السنوي المستهدف</p>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">حصة في الشركة</p>
+                                    <p class="text-gray-600 text-sm">امتلاك حصة أسهم في أريل فينتشرز ذ.م.م.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">تنويع المحفظة</p>
+                                    <p class="text-gray-600 text-sm">تعرض عبر أكثر من 12 مشروعا في الوقت نفسه</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">تمثيل في مجلس الإدارة</p>
+                                    <p class="text-gray-600 text-sm">تأثير استراتيجي على توجه الشركة (بحسب حجم الاستثمار)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">الحد الأدنى للاستثمار</p>
+                                    <p class="text-gray-600 text-sm">₹1 كرور فأكثر (قابل للتوسع حتى أحجام مؤسسية)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <span class="text-green-600 font-bold text-xl mt-1">✓</span>
+                                <div>
+                                    <p class="font-semibold text-gray-900">نمو طويل الأجل</p>
+                                    <p class="text-gray-600 text-sm">خيارات تخارج عبر اكتتاب عام أو استحواذ استراتيجي أو إعادة شراء</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="w-full border-2 border-blue-600 text-blue-600 py-3 rounded-lg font-bold hover:bg-blue-50 transition">
+                            ناقش شراكة الملكية
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مقارنة ملفات المستثمرين -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">أي نموذج يناسبك؟</h2>
+            <p class="text-gray-600 text-center text-lg mb-12">مقارنة سريعة لمساعدتك على الاختيار</p>
+
+            <div class="overflow-x-auto">
+                <table class="comparison-table w-full">
+                    <thead>
+                        <tr class="bg-gray-50 border-b-2 border-gray-200">
+                            <th class="text-left text-gray-900 font-bold">الميزة</th>
+                            <th class="text-center text-red-600 font-bold">تمويل على مستوى المشروع</th>
+                            <th class="text-center text-blue-600 font-bold">ملكية أسهم الشركة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold text-gray-900">أفق الاستثمار</td>
+                            <td class="text-center">18-36 شهرا</td>
+                            <td class="text-center">5-10+ سنوات</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">الحد الأدنى للاستثمار</td>
+                            <td class="text-center">₹50 لاخ+</td>
+                            <td class="text-center">₹1 كرور+</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">متوسط العائد على الاستثمار</td>
+                            <td class="text-center">15-30%</td>
+                            <td class="text-center">20-35%</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">السيولة</td>
+                            <td class="text-center">بعد اكتمال المشروع</td>
+                            <td class="text-center">خيارات تخارج استراتيجية</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">تنوع المحفظة</td>
+                            <td class="text-center">مشروع واحد</td>
+                            <td class="text-center">جميع المشاريع (+12)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">مستوى المشاركة</td>
+                            <td class="text-center">متوسط</td>
+                            <td class="text-center">مرتفع (مستوى مجلس الإدارة)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">ملف المخاطر</td>
+                            <td class="text-center">أقل (مشروع محدد)</td>
+                            <td class="text-center">متوازن (متنوع)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-gray-900">وتيرة التحديث</td>
+                            <td class="text-center">شهريا</td>
+                            <td class="text-center">شهري + ربع سنوي للمجلس</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج جمع بيانات المهتمين -->
+    <section class="bg-gradient-to-br from-slate-900 to-slate-800 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-red-600 px-8 py-8 sm:p-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">احجز مكالمة استثمار خاصة</h2>
+                    <p class="text-white/90 text-lg">تواصل مع فريق الاستثمار لمناقشة فرص مناسبة لمحفظتك</p>
+                </div>
+
+                <form class="p-8 sm:p-12 space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- الاسم الكامل -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">الاسم الكامل *</label>
+                            <input type="text" placeholder="اكتب اسمك الكامل" class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                        </div>
+
+                        <!-- البريد الإلكتروني -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">البريد الإلكتروني *</label>
+                            <input type="email" placeholder="name@example.com" class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                        </div>
+
+                        <!-- الهاتف -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">رقم الهاتف *</label>
+                            <input type="tel" placeholder="9686496343" class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                        </div>
+
+                        <!-- الجهة -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">المؤسسة/الشركة</label>
+                            <input type="text" placeholder="اسم الشركة" class="form-input w-full px-4 py-3 rounded-lg text-gray-900">
+                        </div>
+
+                        <!-- ميزانية الاستثمار -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">ميزانية الاستثمار *</label>
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                                <option value="">اختر نطاق الاستثمار</option>
+                                <option value="50_lakhs">₹50 - 100 لاخ</option>
+                                <option value="1_crore">₹1 - 5 كرور</option>
+                                <option value="5_crore">₹5 - 10 كرور</option>
+                                <option value="10_crore">₹10+ كرور</option>
+                            </select>
+                        </div>
+
+                        <!-- نوع الاستثمار -->
+                        <div>
+                            <label class="block text-gray-900 font-bold mb-2">نموذج الاستثمار المفضل *</label>
+                            <select class="form-input w-full px-4 py-3 rounded-lg text-gray-900" required>
+                                <option value="">اختر نوع الاستثمار</option>
+                                <option value="project">تمويل على مستوى المشروع</option>
+                                <option value="equity">ملكية أسهم الشركة</option>
+                                <option value="both">كلا الخيارين</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- تفضيلات فئات الأصول -->
+                    <div>
+                        <label class="block text-gray-900 font-bold mb-4">فئة الأصول المفضلة *</label>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="plots" class="w-4 h-4 text-red-600">
+                                <label for="plots" class="ml-2 text-gray-700 font-medium">أراضٍ سكنية</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="commercial" class="w-4 h-4 text-red-600">
+                                <label for="commercial" class="ml-2 text-gray-700 font-medium">مساحات تجارية</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="residential" class="w-4 h-4 text-red-600">
+                                <label for="residential" class="ml-2 text-gray-700 font-medium">شقق سكنية</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="farmland" class="w-4 h-4 text-red-600">
+                                <label for="farmland" class="ml-2 text-gray-700 font-medium">أراضٍ زراعية</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- نوع المستثمر -->
+                    <div>
+                        <label class="block text-gray-900 font-bold mb-4">نوع المستثمر *</label>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="individual" name="investor_type" class="w-4 h-4 text-red-600" value="individual" required>
+                                <label for="individual" class="ml-2 text-gray-700 font-medium">مستثمر فردي</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="institutional" name="investor_type" class="w-4 h-4 text-red-600" value="institutional">
+                                <label for="institutional" class="ml-2 text-gray-700 font-medium">مؤسسة/صندوق</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="corporate" name="investor_type" class="w-4 h-4 text-red-600" value="corporate">
+                                <label for="corporate" class="ml-2 text-gray-700 font-medium">شركة</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- الرسالة -->
+                    <div>
+                        <label class="block text-gray-900 font-bold mb-2">معلومات إضافية</label>
+                        <textarea placeholder="أخبرنا بأهدافك الاستثمارية وتفضيلاتك..." rows="4" class="form-input w-full px-4 py-3 rounded-lg text-gray-900"></textarea>
+                    </div>
+
+                    <!-- خانة الموافقة -->
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="agree" class="w-4 h-4 text-red-600 mt-1" required>
+                        <label for="agree" class="text-gray-700 text-sm">
+                            أوافق على أن يتواصل معي فريق الاستثمار في أريل فينتشرز. لقد قرأت وأوافق على <a href="#" class="text-red-600 font-semibold hover:underline">سياسة الخصوصية</a> و <a href="#" class="text-red-600 font-semibold hover:underline">شروط الخدمة</a>.
+                        </label>
+                    </div>
+
+                    <!-- زر الإرسال -->
+                    <button type="submit" class="cta-primary text-white w-full py-4 rounded-lg font-bold text-lg">
+                        احجز مكالمة المستثمر
+                    </button>
+
+                    <p class="text-center text-gray-600 text-sm">
+                        يستجيب فريقنا عادة خلال 24 ساعة. يمكنك أيضا الاتصال مباشرة على <span class="font-bold">9686496343</span>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- آلية الاستثمار -->
+    <section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">آلية الاستثمار</h2>
+
+            <div class="space-y-6">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">استشارة أولية</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            تواصل مع مستشار الاستثمار لفهم متطلبات محفظتك وملف المخاطر وأهدافك الاستثمارية. نناقش معك خيارات تمويل المشاريع وخيارات الملكية المتاحة.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">عرض المشروع</h3>
+                            <p class="text-gray-700 leading-relaxed">
+                            راجع وثائق المشروع التفصيلية والنماذج المالية وتحليل السوق. ويمكن ترتيب زيارات ميدانية وتواصل مباشر مع فريق المشروع وفق تفضيلاتك.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">العناية الواجبة</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            نرتب عمليات تدقيق وتحقق مستقلة عبر شركائنا القانونيين. تتم مراجعة جميع الوثائق بدقة لضمان الامتثال التنظيمي وأمان الاستثمار.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">4</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">الاتفاق والتمويل</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            يتم تنفيذ اتفاقية الاستثمار بشروط واضحة وجداول زمنية وتوقعات عائد محددة. وتودع الأموال في حسابات ضمان يديرها شركاؤنا القانونيون لتحقيق الأمان.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">5</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">المتابعة والتقارير</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            احصل على تحديثات تقدم منتظمة (شهرية أو ربع سنوية) إلى جانب التقارير المالية ومحطات إنجاز المشروع. وتوفر لوحة المستثمر رؤية فورية وشاملة لجميع المؤشرات.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 bg-red-600 text-white rounded-full flex items-center justify-center font-bold text-xl">6</div>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">التخارج والعوائد</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            عند اكتمال المشروع، توزع العوائد وفقا للاتفاق. وتتوفر خيارات تخارج متعددة تشمل إعادة التمويل أو السوق الثانوية أو الاستحواذ المباشر.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الدعوة إلى الإجراء -->
+    <section class="bg-gradient-to-r from-red-600 to-red-700 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">جاهز للاستثمار؟</h2>
+            <p class="text-xl text-white/90 mb-8">ابدأ خطوتك الأولى نحو بناء الثروة مع أريل فينتشرز</p>
+            <a href="#form-section" class="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-100 transition">
+                احجز مكالمتك الآن
+            </a>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- معلومات الشركة -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 rounded-lg overflow-hidden border border-gray-200 bg-white">
+                            <img src="assets/images/aril.jpeg" alt="شعار أريل فينتشرز" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">أريل فينتشرز</h3>
+                            <p class="text-xs text-red-400">بوابة إلى الوفرة</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        منصة استثمار عقاري متميزة تقدم عوائد بمستوى مؤسسي وشفافية عالية.
+                    </p>
+                </div>
+
+                <!-- روابط سريعة -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">روابط سريعة</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index-ar.html" class="hover:text-red-600 transition">الرئيسية</a></li>
+                        <li><a href="projects-ar.html" class="hover:text-red-600 transition">المشاريع</a></li>
+                        <li><a href="about-ar.html" class="hover:text-red-600 transition">من نحن</a></li>
+                        <li><a href="#" class="hover:text-red-600 transition">علاقات المستثمرين</a></li>
+                        <li><a href="contact-ar.html" class="hover:text-red-600 transition">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- المكاتب الإقليمية -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">المراكز الإقليمية</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li>
+                            <p class="font-semibold text-white">بنغالور</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-white">حسن</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-white">ميسور</p>
+                            <p class="text-sm">9686496343</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- التواصل والشؤون القانونية -->
+                <div>
+                    <h4 class="font-bold mb-4 text-lg">معلومات التواصل</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>
+                            <p class="font-semibold text-gray-300">البريد الإلكتروني</p>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
+                        </li>
+                        <li>
+                            <p class="font-semibold text-gray-300">الدعم</p>
+                            <a href="mailto:info@arilventures.com" class="hover:text-red-600 transition">info@arilventures.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- فاصل -->
+            <div class="border-t border-gray-700 pt-8 mb-8">
+                <div class="grid md:grid-cols-3 gap-8 text-sm text-gray-400">
+                    <div>
+                        <p class="font-semibold text-white mb-2">إخلاء مسؤولية الاستثمار</p>
+                        <p>الأداء السابق لا يضمن النتائج المستقبلية. جميع الاستثمارات تنطوي على مخاطر. يرجى قراءة جميع الوثائق بعناية واستشارة مستشار مالي.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white mb-2">بيان الامتثال</p>
+                        <p>جميع المشاريع متوافقة مع الأنظمة المحلية والوطنية. يحصل المستثمرون على وثائق موثقة من طرف ثالث وشهادات امتثال بمعايير مؤسسية.</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-white mb-2">التزام الخصوصية</p>
+                        <p>معلومات استثمارك محمية بتشفير بمستوى مصرفي. لا رسائل غير مرغوبة. بياناتك تبقى سرية وآمنة دائما.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- أسفل التذييل -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+                <p>&copy; 2026 أريل فينتشرز ذ.م.م. جميع الحقوق محفوظة.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-red-600 transition">سياسة الخصوصية</a>
+                    <a href="#" class="hover:text-red-600 transition">شروط الخدمة</a>
+                    <a href="#" class="hover:text-red-600 transition">الامتثال</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
